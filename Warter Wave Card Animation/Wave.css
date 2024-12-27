@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .main_container {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    /* padding: 20px; */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardlayer{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+    position: absolute;
+    /* margin-left: -40px; */
+    animation-name: waves;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    z-index: 1;
+    
+  }
+  
+  .cardlayer2{
+    background-color: rgb(158, 227, 255);
+    opacity: 0.2;
+    position: absolute;
+    /* margin-left: -40px; */
+    animation-name: waves;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    z-index: 1;
+    
+  }
+  
+  .card2{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #40c9ff, #e81cff);
+  }
+  
+  
+  .card{
+  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1{
+    padding: 5px;
+  }
+  
+  p{
+    padding: 5px;
+  }
+  
+  @keyframes waves{
+    form{
+      width: 0px;
+      height: 0px;
+    }
+    to {
+      width: 400px;
+      height: 400px;
+    }
+  }

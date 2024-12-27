@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.Loading{
+   font-size: 70px; 
+   margin-top: -100px;
+   color: rgb(85, 148, 127);
+}
+
+.maincontainer {
+    margin-top: 200px;
+    margin-left: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: rgb(85, 148, 127);
+}
+
+#gear1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -240px;
+    transform: rotateZ(-29deg);
+    animation: rotateclockwise 5s linear infinite; /* Added animation */
+}
+
+#gear2 {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    margin-top: -108px;
+    margin-left: -41px;
+    animation: rotateanticlockwise 5s linear infinite; 
+}
+
+#gear3 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 70px;
+    transform: rotateZ(-29deg);
+    animation: rotateclockwise 5s linear infinite; 
+}
+
+@keyframes rotateclockwise {
+    from {
+        transform: rotateZ(1deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotateanticlockwise {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+
